@@ -15,7 +15,7 @@ Quickstart
 ```sh
 $ go install github.com/magisterquis/leget@latest
 $ leget example.com example.org
-2022/12/17 16:43:32 Listening on 127.0.0.1:4433
+2022/12/17 16:43:32 Listening on 0.0.0.0:443
 2022/12/17 16:43:32 [example.com] Requesting certificates
 2022/12/17 16:43:32 [example.com] Wrote key to leget_certs/example.com.key
 2022/12/17 16:43:32 [example.com] Wrote certificate to leget_certs/example.com.crt
