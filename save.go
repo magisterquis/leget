@@ -82,7 +82,7 @@ func saveKey(dir, name string, key crypto.PrivateKey) error {
 	}
 	defer f.Close()
 	if err := pem.Encode(f, &pem.Block{
-		Type:  Type,
+		Type:  Type + " PRIVATE KEY",
 		Bytes: Bytes,
 	}); nil != err {
 		return fmt.Errorf("writing to file: %w", err)
